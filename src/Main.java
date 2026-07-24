@@ -1,4 +1,4 @@
-
+import dsa.arrays.SinglyLinkedList;
 
 public class Main {
 
@@ -47,10 +47,16 @@ public class Main {
    * 
    */
   public static void main(String[] args) {
-      
-private int num = 2;
-    
-  }
+
+      SinglyLinkedList sll  =  new SinglyLinkedList();
+      sll.addFirst(10);
+      sll.addLast(20);
+      sll.addLast("Abiola");
+      sll.addFirst("Olaitan");
+      sll.display();
+    }
+
+
 }
   
         
