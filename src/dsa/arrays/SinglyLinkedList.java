@@ -15,6 +15,11 @@ public class  SinglyLinkedList <T> {
     private ListNode head = null;
     private int size;
 
+
+    public SinglyLinkedList(){
+        this.head = null;
+        this.size = 0;
+    }
 //head
 
 
