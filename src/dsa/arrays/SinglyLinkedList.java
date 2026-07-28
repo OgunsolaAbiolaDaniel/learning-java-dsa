@@ -107,6 +107,23 @@ public class  SinglyLinkedList <T> {
 
 
 
+    /** extended to check the equals method
+     * public boolean equals(Object o) {
+     * 2 if (o == null) return false;
+     * 3 if (getClass() != o.getClass()) return false;
+     * 4 SinglyLinkedList other = (SinglyLinkedList) o; // use nonparameterized type
+     * 5 if (size != other.size) return false;
+     * 6 Node walkA = head; 7 Node walkB = other.head; // traverse the primary list
+     * // traverse the secondary list
+     * 8 while (walkA != null) {
+     * 9 if (!walkA.getElement().equals(walkB.getElement())) return false; //mismatch
+     * 10 walkA = walkA.getNext();
+     * 11 walkB = walkB.getNext();
+     * 12 }
+     * 13 return true; // if we reach this, everything matched successfully
+     * 14 }
+     * */
+
 
 
 
