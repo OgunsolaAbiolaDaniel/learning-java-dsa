@@ -94,15 +94,31 @@ public class  SinglyLinkedList <T> {
        size--;
     }
 
+    public boolean isEmpty(){
+        return size == 0 ;
+    }
+
     public void  removeLast (){
+        if(isEmpty()){
+            System.out.println("Empty List");
+            return;
+        }
         ListNode current = head;
         ListNode previous= null;
+
+        if(size==1){
+            head = null;
+            size--;
+            return;
+        }
+
         while(current.next!=null)
         {
             previous =current;
             current= current.next;
         }
-        current.next = null;
+        previous.next = null;
+        size --;
     }
 
 

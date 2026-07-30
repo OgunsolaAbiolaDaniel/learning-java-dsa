@@ -1,3 +1,5 @@
+import dsa.adt.Stack;
+import dsa.adtImplementations.StackswithArray;
 import dsa.arrays.SinglyLinkedList;
 
 public class Main {
@@ -48,13 +50,47 @@ public class Main {
    */
   public static void main(String[] args) {
 
-      SinglyLinkedList sll  =  new SinglyLinkedList();
+     /*  SinglyLinkedList sll  =  new SinglyLinkedList();
       sll.addFirst(10);
       sll.addLast(20);
       sll.addLast("Abiola");
       sll.addFirst("Olaitan");
       sll.display();
+      */
+
+
+      Stack stack = new StackswithArray(20);
+      stack.isEmpty();
+      System.out.println("Stack size is "+ stack.size() +"");
+      stack.push(3);
+      stack.push("Abiola");
+      stack.push(true);
+      stack.push(40);
+      stack.push("David");
+      stack.display();
+
+      stack.pop();//pop david
+      System.out.println("------");
+      stack.display();
+
+      stack.pop();//pop 40
+      System.out.println("------");
+      stack.display();
+      System.out.println("------");
+      System.out.println(stack.top() +"");
+      stack.isEmpty();
+      System.out.println("------");
+      stack.display();
+
+      System.out.println("\n" + stack.top() +"");
+
+      System.out.println("\n" + stack.size() +"");
+      stack.pop();
+      System.out.println("\n" + stack.size() +"");
+
+      System.out.println("\n" + stack.top() +"");
     }
+
 
 
 }

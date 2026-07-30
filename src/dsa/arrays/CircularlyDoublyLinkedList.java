@@ -121,7 +121,4 @@ public class CircularlyDoublyLinkedList<T> {
             size --;
         }
     }
-
-
-
 }
