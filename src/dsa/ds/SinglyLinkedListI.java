@@ -1,4 +1,4 @@
-package dsa.arrays;
+package dsa.ds;
 
 public interface SinglyLinkedListI <T> {
     /**

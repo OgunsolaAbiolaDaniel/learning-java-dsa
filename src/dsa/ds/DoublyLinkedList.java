@@ -1,4 +1,4 @@
-package dsa.arrays;
+package dsa.ds;
 
 public class DoublyLinkedList <T> {
     //same as sll:- singly linked list but addition of previous

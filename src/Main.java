@@ -1,7 +1,3 @@
-import dsa.adt.Stack;
-import dsa.adtImplementations.StackswithArray;
-import dsa.arrays.SinglyLinkedList;
-
 public class Main {
 
   /*
@@ -58,7 +54,7 @@ public class Main {
       sll.display();
       */
 
-
+      /*
       Stack stack = new StackswithArray(20);
       stack.isEmpty();
       System.out.println("Stack size is "+ stack.size() +"");
@@ -89,6 +85,7 @@ public class Main {
       System.out.println("\n" + stack.size() +"");
 
       System.out.println("\n" + stack.top() +"");
+ */
     }
 
 

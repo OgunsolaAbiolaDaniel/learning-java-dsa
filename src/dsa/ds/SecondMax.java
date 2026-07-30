@@ -1,7 +1,5 @@
-package dsa.arrays;
+package dsa.ds;
 
-
-import javax.management.ListenerNotFoundException;
 
 public class SecondMax {
     /**
