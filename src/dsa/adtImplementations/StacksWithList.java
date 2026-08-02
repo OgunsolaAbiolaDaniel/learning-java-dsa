@@ -24,6 +24,9 @@ public class StacksWithList<T> implements Stack{
      return (T) list.last();
 
     }
+    public contains(){
+
+    }
 
     @Override
     public int size() {

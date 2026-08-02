@@ -2,13 +2,13 @@ package dsa.ds;
 
 public class  SinglyLinkedList <T> {
 
-    private static class ListNode<T>{
+    private static class ListNode<T> {
         private T data;
         private ListNode next;
 
-        public ListNode(T data){
-            this.data= data;
-            this.next= null;
+        public ListNode(T data) {
+            this.data = data;
+            this.next = null;
         }
     }
 
@@ -16,110 +16,128 @@ public class  SinglyLinkedList <T> {
     private int size;
 
 
-    public SinglyLinkedList(){
+    public SinglyLinkedList() {
         this.head = null;
         this.size = 0;
     }
 //head
 
 
-
-
     //print function ;
-    public void display(){
-         ListNode current = head;
-         while(current!=null){
-             System.out.print(current.data +"->");
-             current= current.next;
-         }
+    public void display() {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.data + "->");
+            current = current.next;
+        }
 
     }
 
 
     //size function
-    public int size(){
-         ListNode current = head;
-         int counter = 0 ;
-         while (current!=null){
-             counter++;
-            current=current.next ;
-         }
-         size = counter;
-         return size ;
+    public int size() {
+        ListNode current = head;
+        int counter = 0;
+        while (current != null) {
+            counter++;
+            current = current.next;
+        }
+        size = counter;
+        return size;
     }
 
-    public T first(){
+    public T first() {
         ListNode first = head;
-        if(first== null){
+        if (first == null) {
             System.out.print("Empty List");
         }
-         return (T)first.data;
+        return (T) first.data;
     }
-    public T last(){
+
+    public T last() {
         ListNode current = head;
-        if (size == 0){
+        if (size == 0) {
             System.out.print("Empty");
         }
-        while(current.next!=null){
-            current =  current.next;
-        };
+        while (current.next != null) {
+            current = current.next;
+        }
+        ;
         return (T) current.data;
     }
-    public void  addFirst(T e){
+
+    public void addFirst(T e) {
         ListNode current = head;
         ListNode newhead = new ListNode(e);
-        newhead.next=current;
-        head=newhead;
+        newhead.next = current;
+        head = newhead;
         size++;
     }
 
-    public void addLast(T e){
+    public void addLast(T e) {
         ListNode current = head;
         ListNode newNode = new ListNode<>(e);
-                while(current.next!= null){
-                    current= current.next;
-                }
-                current.next=newNode;
-                newNode.next=null;
-                size++;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+        newNode.next = null;
+        size++;
     }
 
-    public void removeFirst (){
+    public void removeFirst() {
         ListNode current = head;
-        ListNode newHead ;
-       if(size==0 || head == null){
-           System.out.print("empty");
-       }
-       head= head.next;
-       size--;
+        ListNode newHead;
+        if (size == 0 || head == null) {
+            System.out.print("empty");
+        }
+        head = head.next;
+        size--;
     }
 
-    public boolean isEmpty(){
-        return size == 0 ;
+    public boolean isEmpty() {
+        return size == 0;
     }
 
-    public void  removeLast (){
-        if(isEmpty()){
+    public void removeLast() {
+        if (isEmpty()) {
             System.out.println("Empty List");
             return;
         }
         ListNode current = head;
-        ListNode previous= null;
+        ListNode previous = null;
 
-        if(size==1){
+        if (size == 1) {
             head = null;
             size--;
             return;
         }
 
-        while(current.next!=null)
-        {
-            previous =current;
-            current= current.next;
+        while (current.next != null) {
+            previous = current;
+            current = current.next;
         }
         previous.next = null;
-        size --;
+        size--;
     }
+
+    public boolean contains(T e) {
+        if (isEmpty()) {
+            return false;
+        }
+        ListNode current = head;
+        while (current.next != null) {
+            if (current.data == e) {
+                return true;
+            }
+            current = current.next;
+        }
+       return false;
+    };
+
+
+}
+
 
 
 
@@ -139,8 +157,3 @@ public class  SinglyLinkedList <T> {
      * 13 return true; // if we reach this, everything matched successfully
      * 14 }
      * */
-
-
-
-
-}
