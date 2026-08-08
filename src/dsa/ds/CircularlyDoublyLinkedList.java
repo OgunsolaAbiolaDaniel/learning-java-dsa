@@ -10,7 +10,7 @@ public class CircularlyDoublyLinkedList<T> {
             this.data = data;
             this.next=null;
             this.prev=null;
-        }
+        };
     }
 
 
@@ -37,6 +37,7 @@ public class CircularlyDoublyLinkedList<T> {
         Node head = sentinel.next;
         return (T)head.data;
     }
+
     public T last (){
         if(isEmpty()||sentinel.prev==sentinel){
             return null;
@@ -44,6 +45,8 @@ public class CircularlyDoublyLinkedList<T> {
         Node tail = sentinel.prev;
         return (T)tail.data;
     }
+
+
     public void addfirst(T e){
         Node newNode = new Node(e);
         if(isEmpty()){
@@ -62,6 +65,8 @@ public class CircularlyDoublyLinkedList<T> {
         size ++;
 
     }
+
+
     public void addLast(T e){
         Node newNode = new Node(e);
         if(isEmpty()){

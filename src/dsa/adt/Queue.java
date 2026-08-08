@@ -2,6 +2,7 @@ package dsa.adt;
 
 
 // generic type queue;
+//FIFO
 public interface Queue<T> {
     /**
      * add element to the back of the queue;

@@ -1,4 +1,4 @@
-package dsa.ds;
+package dsa.adt;
 
 public interface List<T> {
     /**
@@ -21,9 +21,9 @@ public interface List<T> {
      * */
     public void addLast();
 
-    /**
-     *
-     * */
-
+   /**
+    *returns the element at the given position
+    */
+    T get (int position);
 
 }

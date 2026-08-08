@@ -26,4 +26,5 @@ public interface Stack <T> {
      * displays the contents of the stack;
      * */
     public void display();
+
 }

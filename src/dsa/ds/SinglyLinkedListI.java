@@ -1,6 +1,8 @@
 package dsa.ds;
 
-public interface SinglyLinkedListI <T> {
+import dsa.adt.List;
+
+public interface SinglyLinkedListI <T> extends List {
     /**
      * adds a new node to the beginning of the list
      * */

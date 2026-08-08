@@ -16,7 +16,6 @@ public class  StackswithArray<T> implements Stack {
         size= 0;
         top = -1;
     }
-
     @Override
     public void push(Object e) {
         if(size==capacity){
@@ -64,6 +63,5 @@ public class  StackswithArray<T> implements Stack {
         for (int i = 0; i < size; i++){
             System.out.print(stack[i]+ "->");
         }
-
     }
 }
